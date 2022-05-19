@@ -1,13 +1,14 @@
-# This is a basic workflow to help you get started with Actions
-
-name: diff2
+name: diff
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  # push:
-  #   branches: [ main ]
+  push:
+    branches: [ main ]
     
+  # schedule:
+  #   - cron: '0 0 * * 1' 
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
  
@@ -72,4 +73,3 @@ jobs:
           
       - name: Push to report
         run: git push origin result
-
