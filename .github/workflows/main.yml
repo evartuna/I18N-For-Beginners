@@ -63,9 +63,9 @@ jobs:
         
       - name: Set config
         run : |
-          git config --global user.email "gaga2353@gmail.com"
-          git config --global user.name "bmlsj"
-        
+          git config --global user.email "kwang1406@gmail.com"
+          git config --global user.name "evartuna"
+          
       - name: push to github
         run : |
           git add report/*.md
