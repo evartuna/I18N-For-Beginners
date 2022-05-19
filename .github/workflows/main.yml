@@ -72,4 +72,5 @@ jobs:
           
       - name: Push to report
         run: |
+          git pull origin result
           git push origin result
