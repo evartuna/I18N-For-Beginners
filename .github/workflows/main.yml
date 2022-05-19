@@ -72,4 +72,6 @@ jobs:
           git commit -m "Add report"
           
       - name: Push to report
-        run: git push origin result
+        run: |
+          git pull origin main
+          git push origin result
