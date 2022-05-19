@@ -72,5 +72,5 @@ jobs:
           
       - name: Push to report
         run: |
-          git pull origin FETCH_HEAD
+          git pull --rebase
           git push origin result
